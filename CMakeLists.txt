@@ -15,7 +15,7 @@ set(HEADER_FILES
 )
 
 set(SOURCE_FILES
-	"${SOURCE_DIR}/gl3w.c"
+	"${SOURCE_DIR}/gl3w.cpp"
 )
 
 # add and depend on OpenGL
@@ -34,7 +34,7 @@ endif()
 # add command to create the header and source files
 add_custom_command(
 	OUTPUT
-		"${SOURCE_DIR}/gl3w.c"
+		"${SOURCE_DIR}/gl3w.cpp"
 		"${HEADER_DIR}/GL/gl3w.h"
 		"${HEADER_DIR}/GL/glcorearb.h"
 		"${HEADER_DIR}/KHR/khrplatform.h"
@@ -47,7 +47,7 @@ add_custom_command(
 add_custom_target(
 	gl3w_gen ALL
 	DEPENDS
-		"${SOURCE_DIR}/gl3w.c"
+		"${SOURCE_DIR}/gl3w.cpp"
 		"${HEADER_DIR}/GL/gl3w.h"
 		"${HEADER_DIR}/GL/glcorearb.h"
 		"${HEADER_DIR}/KHR/khrplatform.h"

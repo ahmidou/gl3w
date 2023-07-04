@@ -10,3 +10,4 @@ CMakeFiles
 CMakeCache.txt
 *.ninja
 *.a
+src/gl3w.cpp
